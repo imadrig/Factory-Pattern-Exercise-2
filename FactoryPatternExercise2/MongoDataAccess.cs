@@ -17,7 +17,7 @@ namespace FactoryPatternExercise2
 
         public void SaveData()
         {
-            Console.WriteLine("“I am saving data to a Mongo database");
+            Console.WriteLine("I am saving data to a Mongo database");
         }
 
     }

@@ -10,14 +10,14 @@ namespace FactoryPatternExercise2
     {
         public List<Product> LoadData()
         {
-            Console.WriteLine("I am reading data from List Database}");
+            Console.WriteLine("I am reading data from List Database");
             List<Product> products = new List<Product>();
             return products;
         }
 
         public void SaveData()
         {
-            Console.WriteLine("“I am saving data to a List database");
+            Console.WriteLine("I am saving data to a List database");
         }
     }
 }
