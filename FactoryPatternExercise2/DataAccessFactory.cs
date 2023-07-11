@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace FactoryPatternExercise2
 {
-    public class DataAccessFactory
+    public static class DataAccessFactory
     {
+        public static IDataAccess GetDataAccessType(string databaseType)
+        {
+            switch (databaseType) 
+            {
+                case "list":
+                    return new ListDataAccess();
+
+                case "mongo":
+                    return new MongoDataAccess();
+
+                case "sql":
+                    return new SQLDataAccess();
+
+                default:
+                    Console.WriteLine("Invalid Input");
+                    return null;
+            
+            }
+        }
+
     }
 }
