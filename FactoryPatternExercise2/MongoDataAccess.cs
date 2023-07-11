@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace FactoryPatternExercise2
 {
-    internal class MongoDataAccess
+    public class MongoDataAccess : IDataAccess
     {
+        public List<Product> LoadData()
+        {
+            Console.WriteLine("I am reading data from Mongo Database}");
+            List<Product> products = new List<Product>();
+            return products;
+        }
+
+        public void SaveData()
+        {
+            Console.WriteLine("“I am saving data to a Mongo database");
+        }
+
     }
 }
